@@ -1,3 +1,5 @@
+source 'https:/rubygems.org'
+
 gem 'config_curator'
 
 # sublime text plugins requirements
