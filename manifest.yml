@@ -25,5 +25,5 @@ config_files:
     fmode: 0644
 
 symlinks:
-  - src: sublime/packages
-    dst: .config/sublime-text-3/Packages/User
+  - src: sublime/Packages/User
+    dst: .config/sublime-text-3/Packages
