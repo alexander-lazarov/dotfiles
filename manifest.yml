@@ -23,3 +23,7 @@ config_files:
   - src: bashrc
     dst: .bashrc
     fmode: 0644
+
+symlinks:
+  - src: sublime/packages
+    dst: .config/sublime-text-3/Packages/User

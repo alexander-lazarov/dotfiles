@@ -1,0 +1,16 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"index_files": true,
+	"rulers":
+	[
+		79,
+		119
+	],
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_whites_space_on_save": true
+}
