@@ -27,3 +27,6 @@ config_files:
 symlinks:
   - src: sublime/Packages/User
     dst: .config/sublime-text-3/Packages
+
+  - src: sublime/Packages/User
+    dst: Library/Application Support/Sublime Text 3/Packages
