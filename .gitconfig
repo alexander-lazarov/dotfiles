@@ -1,0 +1,37 @@
+[core]
+        excludesfile = /Users/a/.gitignore_global
+        autocrlf = false
+        editor = vim
+[difftool "sourcetree"]
+        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+        path =
+[mergetool "sourcetree"]
+        cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+        trustExitCode = true
+[user]
+        name = Alexander Lazarov
+        email = alexander.lazaroff@gmail.com
+        signingkey = 19F083D9B92D3A12
+[push]
+        default = matching
+[commit]
+        template = ./.gitmessage
+        gpgsign = true
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[alias]
+        co = checkout
+        ci = commit
+        aa = add --all
+        ap = add --all -p
+        s = status
+        g = log --graph --decorate --oneline
+        f = fetch
+        unstage = reset HEAD --
+
+[core]
+        pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+
