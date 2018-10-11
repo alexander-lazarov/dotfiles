@@ -1,0 +1,21 @@
+{
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "terminal.integrated.fontFamily": "Monaco for Powerline, monospace",
+    "editor.rulers": [
+        80
+    ],
+    "ruby.specCommand": "spring rspec",
+    "vim.easymotion": true,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.fontFamily": " Monaco, 'Courier New', monospace",
+    "workbench.sideBar.location": "left",
+    "window.zoomLevel": 0,
+    "ruby.rubocop.executePath": "/Users/a/.rbenv/shims/",
+    "breadcrumbs.enabled": true,
+    "editor.lineNumbers": "relative",
+}
