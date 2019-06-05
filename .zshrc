@@ -1,3 +1,7 @@
+# this prevents tmux from moaning,
+# has to e on the top of the file
+export TERM="xterm-256color"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -9,8 +13,8 @@ export ZSH=/Users/a/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
 
 
 # Set list of themes to load
@@ -65,15 +69,15 @@ export NVM_AUTO_USE=true
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  zsh-nvm
   git
-  # globalias # for expanding aliases
   git-flow
   rails
   sublime
   rbenv
   bundler
   osx
+  fzf
+  virtualenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,6 +110,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ls-="sl"
+alias j="jobs -l"
+
+export EDITOR=nvim
 
 # rbenv rehash >/dev/null ^&1
 
@@ -122,7 +130,16 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export BUNDLER_EDITOR=/usr/local/bin/code
 
+# Set NVM_DIR if it isn't already defined
+[[ -z "$NVM_DIR" ]] && export NVM_DIR="$HOME/.nvm"
+
+# Try to load nvm only if command not already available
+if ! type "nvm" &> /dev/null; then
+    # Load nvm if it exists
+    [[ -f "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" --no-use
+fi
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-export GOPATH=$HOME/go
+
 
