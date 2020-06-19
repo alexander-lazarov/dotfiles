@@ -18,6 +18,12 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-dispatch'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+" ctags
+Plug 'soramugi/auto-ctags.vim'
+Plug 'majutsushi/tagbar'
 
 " git stuff
 Plug 'tpope/vim-fugitive'
@@ -95,4 +101,13 @@ let g:mix_format_on_save = 1
 
 let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
+
+" auto-ctags stuff
+" let g:auto_ctags = 1
+" let g:auto_ctags_directory_list = ['.git', '.svn']
+" let g:auto_ctags_tags_name = 'tags'
+" let g:auto_ctags_tags_args = ['--tag-relative=yes', '--recurse=yes', '--sort=yes']
+" let g:auto_ctags_filetype_mode = 1
+
+
 
