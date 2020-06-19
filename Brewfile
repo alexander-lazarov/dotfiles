@@ -1,102 +1,269 @@
-tap "homebrew/dupes"
-tap "homebrew/completions"
-tap "homebrew/core"
-tap "homebrew/php"
-tap "homebrew/versions"
-tap "homebrew/bundle"
-tap "d12frosted/emacs-plus"
-tap "caskroom/cask"
-tap "metacollin/gnuradio"
-cask "java"
-cask "xquartz"
-brew "libyaml"
-brew "openssl"
-brew "sqlite"
-brew "ansible"
-brew "autoconf"
-brew "bash-completion"
-brew "fontconfig"
-brew "gettext"
-brew "pcre"
-brew "pixman"
-brew "chromedriver"
-brew "cmake"
-brew "cowsay"
-brew "cscope"
-brew "doxygen"
-brew "elasticsearch@2.4"
-brew "gmp"
-brew "fish"
-brew "gd"
-brew "gdk-pixbuf"
-brew "git"
-brew "git-flow"
-brew "libtasn1"
-brew "libunistring"
-brew "nettle"
-brew "gnutls"
-brew "libusb", args: ["universal"]
-brew "gnupg"
-brew "xz"
-brew "gnuradio"
-brew "gpg-agent"
-brew "icu4c"
-brew "harfbuzz"
-brew "htop"
-brew "httpie"
-brew "libtool", args: ["universal"]
-brew "imagemagick@6", link: true
-brew "irssi"
-brew "jasper"
-brew "libav"
-brew "libcroco"
-brew "libevent"
-brew "libusb-compat"
-brew "libgphoto2"
-brew "libicns", args: ["universal"]
-brew "librsvg"
-brew "libxml2"
-brew "little-cms2"
-brew "lynx"
-brew "macvim"
-brew "makedepend"
-brew "mit-scheme"
-brew "mycli"
-brew "neovim"
-brew "net-snmp"
-brew "nmap"
-brew "node"
-brew "openssl@1.1"
-brew "pgcli"
-brew "phantomjs"
-brew "pinentry-mac"
-brew "ruby-build"
-brew "rbenv"
-brew "redis"
-brew "rlwrap"
-brew "sane-backends"
-brew "sbcl"
-brew "shared-mime-info"
-brew "sl"
-brew "sphinx-doc"
-brew "ssh-copy-id"
-brew "the_platinum_searcher"
-brew "tmux"
-brew "tmuxinator-completion"
-brew "tree"
-brew "unixodbc"
-brew "utf8proc"
-brew "v8"
-brew "vim", args: ["with-override-system-vi"]
-brew "watch"
-brew "wget"
-brew "youtube-dl"
-brew "homebrew/php/composer"
-brew "homebrew/php/php70-intl"
-brew "homebrew/php/php70-mcrypt"
-brew "homebrew/php/symfony-installer"
-cask "android-sdk"
-cask "save-hollywood"
-cask "smcfancontrol"
-cask "wireshark"
-cask "wkhtmltopdf"
+ack
+act
+agda
+ansible
+aom
+apr
+apr-util
+argon2
+arpack
+aspell
+augeas
+autoconf
+automake
+berkeley-db
+boost
+brotli
+browsh
+c-ares
+cabal-install
+cairo
+chezscheme
+cloc
+clojure
+cloudflared
+cmake
+ctags
+curl-openssl
+dav1d
+dialog
+docbook
+docbook-xsl
+eigen
+elixir
+emacs
+epstool
+erlang
+ffmpeg
+fftw
+fig2dev
+flac
+fltk
+fontconfig
+fortune
+freetds
+freetype
+frei0r
+fribidi
+fx
+fzf
+gcc
+gd
+gdbm
+gdk-pixbuf
+geos
+gettext
+ghc
+ghc@8.6
+ghostscript
+giflib
+giflossy
+git
+git-flow
+git-lfs
+gl2ps
+glib
+glpk
+gmp
+gnu-getopt
+gnu-sed
+gnuplot
+gnuradio
+gnutls
+graphicsmagick
+graphite2
+gsl
+harfbuzz
+haskell-stack
+hdf5
+helm
+htop
+hwloc
+icu4c
+idris
+ilmbase
+imagemagick
+imagemagick@6
+ipython
+irssi
+isl
+jansson
+jasper
+jemalloc
+jpeg
+jq
+jupyter
+jupyterlab
+krb5
+kubernetes-cli
+lame
+lean
+leptonica
+libarchive
+libass
+libb2
+libbluray
+libcerf
+libcroco
+libde265
+libev
+libevent
+libffi
+libgcrypt
+libgpg-error
+libheif
+libidn
+libidn2
+liblqr
+libmaxminddb
+libmetalink
+libmpc
+libogg
+libomp
+libpng
+libpq
+librsvg
+librtlsdr
+libsamplerate
+libscrypt
+libsndfile
+libsodium
+libsoxr
+libssh2
+libtasn1
+libtermkey
+libtiff
+libtool
+libunistring
+libusb
+libuv
+libvidstab
+libvorbis
+libvpx
+libvterm
+libyaml
+libzip
+links
+little-cms2
+lolcat
+lua
+lua@5.1
+luajit
+lynx
+lz4
+lzo
+magic-wormhole
+masscan
+metis
+minikube
+mit-scheme
+mpfr
+msgpack
+mycli
+mysql
+ncurses
+neofetch
+neovim
+netpbm
+nettle
+nghttp2
+node
+numpy@1.16
+octave
+oniguruma
+open-mpi
+openblas
+opencore-amr
+openexr
+openjdk
+openjpeg
+openldap
+openssl
+openssl@1.1
+opus
+ossp-uuid
+p11-kit
+pacvim
+pandoc
+pango
+pcre
+pcre2
+perl
+pgcli
+php@7.2
+pixman
+pkg-config
+plotutils
+portaudio
+protobuf
+protobuf@3.7
+pstoedit
+python
+python@2
+python@3.8
+qhull
+qrupdate
+qt
+rav1e
+rbenv
+readline
+redis
+rlwrap
+rtmpdump
+rubberband
+ruby
+ruby-build
+sbcl
+scc
+screenfetch
+screenresolution
+sdl2
+shared-mime-info
+sl
+snappy
+speedtest-cli
+speex
+sqlite
+srt
+subliminal
+suite-sparse
+sundials
+swi-prolog
+swig
+szip
+tbb
+telnet
+tesseract
+texinfo
+the_silver_searcher
+theora
+tidy-html5
+tig
+tldr
+tmux
+tor
+tree
+ttygif
+ttyrec
+uhd
+unbound
+unibilium
+unixodbc
+utf8proc
+veclibfort
+vim
+webp
+wget
+wxmac
+x264
+x265
+xmlto
+xvid
+xz
+yarn
+youtube-dl
+zeromq
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+zstd
