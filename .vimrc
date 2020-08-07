@@ -27,6 +27,7 @@ Plug 'majutsushi/tagbar'
 
 " git stuff
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'airblade/vim-gitgutter'
 
 " colour schemes
@@ -40,6 +41,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'thoughtbot/vim-rspec'
 Plug 'amadeus/vim-mjml'
+Plug 'slim-template/vim-slim'
 call plug#end()
 
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg
@@ -102,12 +104,12 @@ let g:mix_format_on_save = 1
 let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
 
-" auto-ctags stuff
-" let g:auto_ctags = 1
-" let g:auto_ctags_directory_list = ['.git', '.svn']
-" let g:auto_ctags_tags_name = 'tags'
-" let g:auto_ctags_tags_args = ['--tag-relative=yes', '--recurse=yes', '--sort=yes']
-" let g:auto_ctags_filetype_mode = 1
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 
-
+" change cursor depending on mode
+" https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
