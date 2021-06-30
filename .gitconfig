@@ -1,37 +1,44 @@
 [core]
-        excludesfile = /Users/a/.gitignore_global
-        autocrlf = false
-        editor = vim
-[difftool "sourcetree"]
-        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-        path =
+	excludesfile = /Users/a/.gitignore_global
+	autocrlf = false
+	editor = vim
 [mergetool "sourcetree"]
-        cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-        trustExitCode = true
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [user]
-        name = Alexander Lazarov
-        email = alexander.lazaroff@gmail.com
-        signingkey = 19F083D9B92D3A12
+	name = Alexander Lazarov
+	email = a.lazarov@manageplaces.com
+	signingkey = 19F083D9B92D3A12
 [push]
-        default = matching
+	default = matching
 [commit]
-        template = ./.gitmessage
-        gpgsign = true
+	template = ./.gitmessage
+	gpgsign = true
 [filter "lfs"]
-        clean = git-lfs clean -- %f
-        smudge = git-lfs smudge -- %f
-        process = git-lfs filter-process
-        required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [alias]
-        co = checkout
-        ci = commit
-        aa = add --all
-        ap = add --all -p
-        s = status
-        g = log --graph --decorate --oneline
-        f = fetch
-        unstage = reset HEAD --
+	co = checkout
+	ci = commit
+	aa = add --all
+	ap = add --all -p
+	g = log --graph --decorate --oneline
+	s = status
+	f = fetch
+	unstage = reset HEAD --
+	branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)%09%(color:red)%(authorname)%09%(color:white)%(color:bold)%(refname:short)\" refs/remotes
+	mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 
 [core]
-        pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
-
+	pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+[pull]
+	rebase = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[diff "sopsdiffer"]
+	textconv = sops -d
+[diff]
+	colorMoved = default
