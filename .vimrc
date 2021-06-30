@@ -4,7 +4,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'vim-airline/vim-airline'
-Plug 'psliwka/vim-smoothie'
+" Plug 'psliwka/vim-smoothie'
 Plug 'kana/vim-operator-user'
 Plug 'haya14busa/vim-operator-flashy'
 Plug 'dense-analysis/ale'
@@ -22,7 +22,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " ctags
-Plug 'soramugi/auto-ctags.vim'
+" Plug 'soramugi/auto-ctags.vim'
 Plug 'majutsushi/tagbar'
 
 " git stuff
@@ -39,7 +39,8 @@ Plug 'posva/vim-vue'
 Plug 'digitaltoad/vim-pug'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
-Plug 'thoughtbot/vim-rspec'
+" Plug 'thoughtbot/vim-rspec'
+Plug 'vim-test/vim-test'
 Plug 'amadeus/vim-mjml'
 Plug 'slim-template/vim-slim'
 call plug#end()
@@ -61,17 +62,23 @@ let g:ctrlp_map = '<c-p>'
 
 :imap jj <Esc>
 
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>y :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+" map <Leader>t :call RunCurrentSpecFile()<CR>
+" map <Leader>y :call RunNearestSpec()<CR>
+" map <Leader>l :call RunLastSpec()<CR>
+" map <Leader>a :call RunAllSpecs()<CR>
 
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+map <Leader>t :TestFile<CR>
+map <Leader>y :TestNearest<CR>
+map <Leader>l :TestLast<CR>
+map <Leader>a :TestSuite<CR>
 
-let g:rspec_command = "!spring rspec --drb {spec}"
+
+" let g:rspec_command = "!spring rspec --drb {spec}"
 " let g:rspec_command = "!bundle exec rspec --drb {spec}"
 
 hi MatchParen cterm=underline ctermbg=none ctermfg=none
+
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " git gutter stuff
 set updatetime=100
@@ -105,9 +112,15 @@ let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
 
 let g:ale_fixers={
-  \'json': ['prettier'],
-  \'php': ['prettier'],
+			\'json': ['prettier'],
+			\'php': ['prettier'],
 \}
+
+let b:ale_linter_aliases = ['javascript', 'vue']
+   " 34 let b:ale_linters = ['eslint', 'vls']
+   " 35 let g:ale_sign_error = '●'
+   " 36 let g:ale_sign_warning = '.'
+   " 37 let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
