@@ -6,12 +6,12 @@ export TERM="xterm-256color"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/a/.oh-my-zsh
+export ZSH=/Users/alexander/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
@@ -78,6 +78,7 @@ plugins=(
   osx
   fzf
   virtualenv
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -126,8 +127,6 @@ export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias sub-dl="subliminal download -l en"
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 export BUNDLER_EDITOR=/usr/local/bin/code
 
 # Set NVM_DIR if it isn't already defined
@@ -143,3 +142,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 
 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
