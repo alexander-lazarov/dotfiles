@@ -129,9 +129,24 @@ alias sub-dl="subliminal download -l en"
 
 export BUNDLER_EDITOR=/usr/local/bin/code
 
+# Set NVM_DIR if it isn't already defined
+[[ -z "$NVM_DIR" ]] && export NVM_DIR="$HOME/.nvm"
+
+# Try to load nvm only if command not already available
+if ! type "nvm" &> /dev/null; then
+    # Load nvm if it exists
+    [[ -f "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" --no-use
+fi
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-eval "$(fnm env --use-on-cd)"
+
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+alias brow='arch --x86_64 /usr/local/Homebrew/bin/brew'
+alias ib='PATH=/usr/local/bin'
+
+# Homebrew on Apple Silicon
+path=('/opt/homebrew/bin' $path)
+export PATH
