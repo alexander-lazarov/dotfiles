@@ -75,7 +75,7 @@ plugins=(
   sublime
   rbenv
   bundler
-  osx
+  macos
   fzf
   virtualenv
   zsh-autosuggestions
