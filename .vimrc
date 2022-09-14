@@ -13,17 +13,21 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'kien/ctrlp.vim'
-Plug 'wikitopian/hardmode'
+" Plug 'wikitopian/hardmode'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-dispatch'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+" Plug 'danth/pathfinder.vim'
 
 " ctags
 " Plug 'soramugi/auto-ctags.vim'
 Plug 'majutsushi/tagbar'
+
+" autocomplete
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " git stuff
 Plug 'tpope/vim-fugitive'
@@ -43,6 +47,13 @@ Plug 'tpope/vim-endwise'
 Plug 'vim-test/vim-test'
 Plug 'amadeus/vim-mjml'
 Plug 'slim-template/vim-slim'
+Plug 'mechatroner/rainbow_csv'
+
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
 call plug#end()
 
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg
@@ -54,8 +65,8 @@ set number
 map gn :bn<cr>
 map gp :bp<cr>
 
-let g:HardMode_level = 'wannabe'
-let g:HardMode_hardmodeMsg = 'Dont use this!'
+" let g:HardMode_level = 'wannabe'
+" let g:HardMode_hardmodeMsg = 'Dont use this!'
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 let g:ctrlp_map = '<c-p>'
@@ -114,9 +125,10 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_fixers={
 			\'json': ['prettier'],
 			\'php': ['prettier'],
+			\'ruby': ['rubycop']
 \}
 
-let b:ale_linter_aliases = ['javascript', 'vue']
+" let b:ale_linter_aliases = ['javascript', 'vue']
    " 34 let b:ale_linters = ['eslint', 'vls']
    " 35 let g:ale_sign_error = '●'
    " 36 let g:ale_sign_warning = '.'
@@ -131,3 +143,12 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+" coc stuff
+let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver']
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
