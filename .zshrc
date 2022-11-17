@@ -80,6 +80,7 @@ plugins=(
   fzf
   virtualenv
   zsh-autosuggestions
+  fnm
 )
 
 source $ZSH/oh-my-zsh.sh
