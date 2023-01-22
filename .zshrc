@@ -65,6 +65,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs comman
 #
 export NVM_AUTO_USE=true
 
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -79,8 +80,8 @@ plugins=(
   macos
   fzf
   virtualenv
-  zsh-autosuggestions
   fnm
+  # zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,18 +114,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls-="sl"
 alias j="jobs -l"
+alias vim="nvim"
 
 export EDITOR=nvim
 
 # rbenv rehash >/dev/null ^&1
+# eval "$(~/.rbenv/bin/rbenv init - zsh)"
 
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/Users/a/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
 
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias sub-dl="subliminal download -l en"
@@ -143,3 +142,9 @@ alias ib='PATH=/usr/local/bin'
 # Homebrew on Apple Silicon
 path=('/opt/homebrew/bin' $path)
 export PATH
+
+# fnm
+export PATH="/Users/alexander/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
+
+eval "$(rbenv init - zsh)"
