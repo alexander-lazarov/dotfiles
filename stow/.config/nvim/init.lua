@@ -147,6 +147,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 
+vim.keymap.set("n", "<D-v>", "\"+p<CR>")
+
 -- Set colorscheme
 vim.o.termguicolors = true
 vim.cmd [[colorscheme onedark]]
@@ -456,6 +458,10 @@ cmp.setup {
   },
 }
 
+if vim.g.neovide then
+  vim.g.neovide_cursor_vfx_mode = "railgun"
+  vim.g.neovide_cursor_animation_length = 0.015
+end
 
 -- vim.cmd [[autocmd BufWritePre <buffer> lua  vim.lsp.buf.format()]]
 
