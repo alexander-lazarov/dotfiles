@@ -5,5 +5,10 @@ someone.
 
 ## Install
 
-Use [curator](https://github.com/razor-x/config_curator) to deploy files from
-repository to actual path.
+Use `stow` to link files:
+
+```bash
+cd dotifles/stow
+
+stow . --target=$HOME
+```
