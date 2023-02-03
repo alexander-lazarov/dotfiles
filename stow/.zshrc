@@ -80,7 +80,6 @@ plugins=(
   macos
   fzf
   virtualenv
-  fnm
   # zsh-autosuggestions
 )
 
@@ -132,8 +131,6 @@ export BUNDLER_EDITOR=/usr/local/bin/code
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-eval "$(fnm env --use-on-cd)"
-
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias brow='arch --x86_64 /usr/local/Homebrew/bin/brew'
@@ -143,8 +140,6 @@ alias ib='PATH=/usr/local/bin'
 path=('/opt/homebrew/bin' $path)
 export PATH
 
-# fnm
-export PATH="/Users/alexander/Library/Application Support/fnm:$PATH"
-eval "`fnm env`"
-
 eval "$(rbenv init - zsh)"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
