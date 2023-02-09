@@ -80,6 +80,7 @@ plugins=(
   macos
   fzf
   virtualenv
+  volta
   # zsh-autosuggestions
 )
 
