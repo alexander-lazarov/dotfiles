@@ -151,6 +151,8 @@ vim.keymap.set("n", "<D-v>", "\"+p<CR>")
 vim.keymap.set("n", "q[", ":cprevious<CR>")
 vim.keymap.set("n", "q]", ":cnext<CR>")
 
+vim.keymap.set("n", "<leader>f", ":Format<CR>")
+
 -- Set colorscheme
 vim.o.termguicolors = true
 vim.cmd [[colorscheme onedark]]
