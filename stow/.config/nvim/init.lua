@@ -68,6 +68,8 @@ require('packer').startup(function(use)
   use 'jparise/vim-graphql'
   use 'vim-test/vim-test'
 
+  use 'tpope/vim-unimpaired'
+
   -- test.ruby.rspec.executable = 'spring rspec'
   -- vim.opt.test.ruby.rspec.executable = 'spring rspec'
 
@@ -146,10 +148,6 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 
 vim.keymap.set("n", "<D-v>", "\"+p<CR>")
-
--- Set quickfix keymaps
-vim.keymap.set("n", "q[", ":cprevious<CR>")
-vim.keymap.set("n", "q]", ":cnext<CR>")
 
 vim.keymap.set("n", "<leader>f", ":Format<CR>")
 
