@@ -147,6 +147,10 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 
 vim.keymap.set("n", "<D-v>", "\"+p<CR>")
 
+-- Set quickfix keymaps
+vim.keymap.set("n", "q[", ":cprevious<CR>")
+vim.keymap.set("n", "q]", ":cnext<CR>")
+
 -- Set colorscheme
 vim.o.termguicolors = true
 vim.cmd [[colorscheme onedark]]
