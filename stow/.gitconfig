@@ -10,10 +10,10 @@
 	email = alexander.lazaroff@gmail.com
 	signingkey = B92D3A12
 [push]
-	default = matching
+	default = current
 [commit]
-	template = ./.gitmessage
 	gpgsign = true
+	template = /Users/alexander/.stCommitMsg
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
