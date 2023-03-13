@@ -11,6 +11,7 @@
 	signingkey = B92D3A12
 [push]
 	default = current
+	autoSetupRemote = true
 [commit]
 	gpgsign = true
 	template = /Users/alexander/.stCommitMsg
