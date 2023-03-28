@@ -69,6 +69,8 @@ require('packer').startup(function(use)
 
   use 'tpope/vim-unimpaired'
 
+  use 'github/copilot.vim'
+
   -- test.ruby.rspec.executable = 'spring rspec'
   -- vim.opt.test.ruby.rspec.executable = 'spring rspec'
 
