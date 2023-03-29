@@ -412,6 +412,8 @@ vim.keymap.set("n", "<D-v>", "\"+p<CR>")
 
 vim.keymap.set("n", "<leader>f", ":Format<CR>")
 
+vim.keymap.set("n", "<leader>t", ":TestNearest<CR>")
+vim.keymap.set("n", "<leader>T", ":TestFile<CR>")
 
 -- Enable copy/paste in neovide
 if vim.g.neovide then
