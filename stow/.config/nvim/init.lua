@@ -424,6 +424,8 @@ if vim.g.neovide then
   vim.keymap.set('v', '<D-v>', '"+P') -- Paste visual mode
   vim.keymap.set('c', '<D-v>', '<C-R>+') -- Paste command mode
   vim.keymap.set('i', '<D-v>', '<ESC>l"+Pli') -- Paste insert mode
+
+  vim.fn.setenv("PATH", os.getenv("HOME") .. "/.volta/bin:" .. os.getenv("HOME") .. "/.rbenv/shims:" .. os.getenv("PATH"))
 end
 
 -- Allow clipboard copy paste in neovim
