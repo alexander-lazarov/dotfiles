@@ -142,5 +142,7 @@ path=('/opt/homebrew/bin' $path)
 export PATH
 
 eval "$(rbenv init - zsh)"
+eval "$(scmpuff init -s)"
+
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
