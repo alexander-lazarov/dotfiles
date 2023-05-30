@@ -81,6 +81,7 @@ plugins=(
   fzf
   virtualenv
   volta
+  autojump
   # zsh-autosuggestions
 )
 
