@@ -740,6 +740,13 @@ if vim.g.neovide then
   vim.g.neovide_cursor_animation_length = 0.015
 end
 
+-- copilot setup
+--
+-- TODO: translate the following line in pure lua
+vim.cmd("imap <silent><script><expr> <C-L> copilot#Accept(\"\\<CR>\")")
+vim.g.copilot_no_tab_map = true
+
+
 -- vim.cmd [[autocmd BufWritePre <buffer> lua  vim.lsp.buf.format()]]
 
 -- The line beneath this is called `modeline`. See `:help modeline`
