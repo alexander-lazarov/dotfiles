@@ -71,6 +71,7 @@ require('packer').startup(function(use)
 
   use 'github/copilot.vim'
 
+  use 'tpope/vim-rails'
 
   use {
     "nvim-neo-tree/neo-tree.nvim",
