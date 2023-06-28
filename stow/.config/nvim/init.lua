@@ -416,6 +416,11 @@ vim.keymap.set("n", "<leader>f", ":Format<CR>")
 vim.keymap.set("n", "<leader>t", ":TestNearest<CR>")
 vim.keymap.set("n", "<leader>T", ":TestFile<CR>")
 
+vim.keymap.set("n", "<leader>aa", ":A<CR>")
+vim.keymap.set("n", "<leader>av", ":AV<CR>")
+vim.keymap.set("n", "<leader>rr", ":R<CR>")
+vim.keymap.set("n", "<leader>rv", ":RV<CR>")
+
 -- Enable copy/paste in neovide
 if vim.g.neovide then
   vim.g.neovide_input_use_logo = 1 -- enable use of the logo (cmd) key
