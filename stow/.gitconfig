@@ -24,6 +24,8 @@
 	co = checkout
 	ci = commit
 	aa = add --all
+	w = commit -m \"WIP\"
+	wc = commit -am \"WIP\"
 	ap = add --all -p
 	g = log --graph --decorate --oneline
 	s = status
