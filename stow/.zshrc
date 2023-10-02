@@ -148,5 +148,7 @@ eval "$(scmpuff init -s)"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# switch dark/light mode
+alias switch-theme="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
