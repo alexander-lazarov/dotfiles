@@ -1,4 +1,3 @@
-f
 # this prevents tmux from moaning,
 # has to e on the top of the file
 export TERM="xterm-256color"
