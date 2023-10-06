@@ -152,3 +152,4 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 # switch dark/light mode
 alias swt="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
 alias cat=bat
+alias ff="fzf --preview \"bat --color=always --style=numbers --line-range=:500 {}\""
