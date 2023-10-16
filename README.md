@@ -5,6 +5,12 @@ someone.
 
 ## Install
 
+### Package installation
+
+`cd` into the root directory and run: `brew bundle`.
+
+### Linking dotfiles
+
 Use `stow` to link files:
 
 ```bash

@@ -1,386 +1,71 @@
-ack
-act
-adns
-adwaita-icon-theme
-agda
-ansible
-aom
-apr
-apr-util
-argon2
-arpack
-aspell
-assimp
-atk
-augeas
-autoconf
-automake
-aws-iam-authenticator
-bdw-gc
-berkeley-db
-boost
-brotli
-browsh
-c-ares
-cabal-install
-cairo
-chezscheme
-cloc
-clojure
-cloudflared
-cmake
-cordless
-ctags
-curl
-curl-openssl
-dav1d
-dbus
-dialog
-docbook
-docbook-xsl
-double-conversion
-doxygen
-eigen
-eksctl
-elixir
-emacs
-epstool
-erlang
-ffmpeg
-fftw
-fig2dev
-flac
-fltk
-fontconfig
-fortune
-freetds
-freetype
-frei0r
-fribidi
-fx
-fzf
-gcc
-gd
-gdb
-gdbm
-gdk-pixbuf
-geos
-gettext
-ghc
-ghc@8.6
-ghostscript
-giflib
-giflossy
-git
-git-flow
-git-lfs
-gl2ps
-gleam
-glib
-glpk
-gmp
-gnu-getopt
-gnu-sed
-gnupg
-gnuplot
-gnutls
-go
-gobject-introspection
-gpgme
-graphicsmagick
-graphite2
-graphviz
-gsettings-desktop-schemas
-gsl
-gtk+3
-gts
-guile
-harfbuzz
-haskell-stack
-hdf5
-helm
-hicolor-icon-theme
-htop
-httpd
-hub
-hwloc
-icu4c
-idris
-ilmbase
-imagemagick
-imagemagick@6
-imath
-iperf3
-ipython
-irssi
-isl
-jansson
-jasper
-jbig2dec
-jemalloc
-jmeter
-jpeg
-jq
-jupyter
-jupyterlab
-krb5
-kubernetes-cli
-lame
-lean
-leptonica
-libarchive
-libass
-libassuan
-libb2
-libbluray
-libcerf
-libcroco
-libde265
-libepoxy
-libev
-libevent
-libffi
-libgcrypt
-libgpg-error
-libheif
-libice
-libidn
-libidn2
-libksba
-liblqr
-libmaxminddb
-libmetalink
-libmpc
-libogg
-libomp
-libpng
-libpq
-libproxy
-libpthread-stubs
-librsvg
-librtlsdr
-libsamplerate
-libscrypt
-libsm
-libsmi
-libsndfile
-libsodium
-libsoxr
-libssh
-libssh2
-libtasn1
-libtermkey
-libtiff
-libtool
-libunistring
-libusb
-libuv
-libvidstab
-libvorbis
-libvpx
-libvterm
-libx11
-libxau
-libxaw
-libxcb
-libxdmcp
-libxext
-libxft
-libxinerama
-libxmu
-libxpm
-libxrender
-libxt
-libyaml
-libzip
-links
-little-cms2
-log4cpp
-lolcat
-lua
-lua@5.1
-luajit
-luajit-openresty
-luv
-lynx
-lz4
-lzo
-m4
-magic-wormhole
-masscan
-maven
-metis
-minikube
-mit-scheme
-mpdecimal
-mpfr
-msgpack
-mutt
-mycli
-mysql
-mysql-client
-ncurses
-neofetch
-neovim
-nethack
-netpbm
-nettle
-nghttp2
-nmap
-node
-npth
-numpy
-numpy@1.16
-octave
-oniguruma
-open-mpi
-openblas
-opencore-amr
-openexr
-openjdk
-openjpeg
-openldap
-openssl@1.1
-opus
-orc
-ossp-uuid
-p11-kit
-pacvim
-pandoc
-pango
-pcre
-pcre2
-perl
-pgcli
-php@7.2
-pinentry
-pixman
-pkg-config
-plotutils
-pngpaste
-portaudio
-proj
-protobuf
-protobuf@3.7
-pstoedit
-py3cairo
-pygobject3
-pyqt
-pyqt@5
-python-tabulate
-python@2
-python@3.8
-python@3.9
-qhull
-qrupdate
-qscintilla2
-qt
-qt@5
-qwt
-rav1e
-rbenv
-readline
-rebar3
-redis
-ripgrep
-rlwrap
-rtmpdump
-rubberband
-ruby
-ruby-build
-sbcl
-scala
-scc
-screenfetch
-screenresolution
-sdl2
-shared-mime-info
-siege
-sip
-six
-sl
-smartmontools
-snappy
-sops
-speedtest-cli
-speex
-sphinx-doc
-sqlite
-srt
-stern
-subliminal
-suite-sparse
-sundials
-swi-prolog
-swig
-sysbench
-szip
-tbb
-tcl-tk
-telnet
-tesseract
-texinfo
-the_silver_searcher
-theora
-tidy-html5
-tig
-tldr
-tmux
-tokyo-cabinet
-tor
-tree
-ttygif
-ttyrec
-uhd
-unbound
-unibilium
-unixodbc
-utf8proc
-v8
-v8@3.15
-veclibfort
-vim
-volk
-watch
-webp
-wget
-wireshark
-wxmac
-x264
-x265
-xmlto
-xorgproto
-xterm
-xvid
-xz
-yarn
-youtube-dl
-zeromq
-zimg
-zsh
-zsh-autosuggestions
-zsh-syntax-highlighting
-zstd
-1password-cli
-android-file-transfer
-android-studio
-emacs
-font-microsoft-office
-gimp
-gnucash
-gqrx
-hex-fiend
-java
-julia
-macdown
-mactex
-minikube
-mysql-shell
-ngrok
-r
-racket
-smcfancontrol
-twine
-vagrant
-virtualbox
-wireshark
+tap "homebrew/bundle"
+tap "homebrew/services"
+tap "teamookla/speedtest"
+tap "wez/wezterm"
+brew "anycable-go"
+brew "openssl@3"
+brew "autojump"
+brew "bat"
+brew "btop"
+brew "cmake"
+brew "elixir"
+brew "fd"
+brew "ffmpeg"
+brew "fzf"
+brew "git"
+brew "hivemind"
+brew "htop"
+brew "imagemagick"
+brew "jrnl"
+brew "kubernetes-cli"
+brew "lolcat"
+brew "luarocks"
+brew "mysql"
+brew "neovim"
+brew "poetry"
+brew "poppler"
+brew "postgresql@15", restart_service: true, link: true
+brew "pyenv"
+brew "qpdf"
+brew "rabbitmq"
+brew "ruby-build"
+brew "rbenv"
+brew "redis", restart_service: true
+brew "ripgrep"
+brew "scmpuff"
+brew "stow"
+brew "tig"
+brew "tmux"
+brew "tnef"
+brew "vim"
+brew "watch"
+brew "yarn"
+brew "youtube-dl"
+brew "youtube-dlc"
+brew "yt-dlp"
+brew "zsh-autosuggestions"
+brew "teamookla/speedtest/speedtest"
+cask "monitorcontrol"
+vscode "anoff.theme-monokai-light"
+vscode "azemoh.one-monokai"
+vscode "castwide.solargraph"
+vscode "Cronos87.yaml-symbols"
+vscode "dbaeumer.vscode-eslint"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "GitHub.copilot"
+vscode "GitHub.copilot-chat"
+vscode "GitHub.vscode-pull-request-github"
+vscode "noku.rails-run-spec-vscode"
+vscode "rebornix.ruby"
+vscode "rebornix.toggle"
+vscode "rubocop.vscode-rubocop"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "sianglim.slim"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "stylelint.vscode-stylelint"
+vscode "unifiedjs.vscode-mdx"
+vscode "vscodevim.vim"
+vscode "wingrunr21.vscode-ruby"
+vscode "yoavbls.pretty-ts-errors"
+vscode "zhuangtongfa.material-theme"
