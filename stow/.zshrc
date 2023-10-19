@@ -73,7 +73,6 @@ plugins=(
   git
   git-flow
   rails
-  sublime
   rbenv
   bundler
   macos
