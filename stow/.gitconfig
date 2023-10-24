@@ -46,4 +46,4 @@
 [diff]
 	colorMoved = default
 [gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
+	program = /opt/homebrew/bin/gpg
