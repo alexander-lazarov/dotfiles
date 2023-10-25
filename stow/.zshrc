@@ -148,6 +148,7 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 export GPG_TTY=$(tty)
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
