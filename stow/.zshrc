@@ -123,6 +123,7 @@ export EDITOR=nvim
 
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="${HOME}/bin:$PATH"
 
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias sub-dl="subliminal download -l en"
