@@ -196,7 +196,7 @@ require('packer').startup(function(use)
           mappings = {
             ["<space>"] = {
               "toggle_node",
-              nowait = false,   -- disable `nowait` if you have existing combos starting with this char that you want to use
+              nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use
             },
             ["<2-LeftMouse>"] = "open",
             ["<cr>"] = "open",
@@ -676,6 +676,16 @@ local servers = {
   -- pyright = {},
   -- rust_analyzer = {},
   -- tsserver = {},
+  lua_ls = {
+    Lua = {
+      diagnostics = {
+        globals = {
+          'vim',
+          'require'
+        }
+      }
+    }
+  }
 }
 
 -- Setup neovim lua configuration
