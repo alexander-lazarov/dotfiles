@@ -697,11 +697,20 @@ mason_lspconfig.setup {
 
 mason_lspconfig.setup_handlers {
   function(server_name)
+    local cmd
+
+    if server_name == 'solargraph'
+    then
+      cmd = { '~/.rbenv/shims/solargraph', 'stdio' }
+    else
+      cmd = nil
+    end
+
     require('lspconfig')[server_name].setup {
       capabilities = capabilities,
       on_attach = on_attach,
       settings = servers[server_name],
-      cmd = {'/Users/alexander/.rbenv/shims/solargraph', 'stdio'},
+      cmd = cmd,
     }
   end,
 }
