@@ -16,5 +16,5 @@ Use `stow` to link files:
 ```bash
 cd dotifles/stow
 
-stow . --target=$HOME
+stow . --target=$HOME --no-folding
 ```
