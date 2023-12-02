@@ -71,7 +71,6 @@ export NVM_AUTO_USE=true
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  git-flow
   rails
   rbenv
   bundler
