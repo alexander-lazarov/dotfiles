@@ -11,7 +11,7 @@ export ZSH=/Users/$(whoami)/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs command_execution_time time)
@@ -155,3 +155,4 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 alias swt="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
 alias cat=bat
 alias ff="fzf --preview \"bat --color=always --style=numbers --line-range=:500 {}\""
+alias kspring="ps aux | grep spring | grep -v grep | awk '{print $2}' | xargs kill -9"
