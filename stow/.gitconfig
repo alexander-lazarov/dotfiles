@@ -46,3 +46,5 @@
 	colorMoved = default
 [gpg]
 	program = /opt/homebrew/bin/gpg
+[rerere]
+	enabled = true
