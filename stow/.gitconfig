@@ -48,3 +48,5 @@
 	program = /opt/homebrew/bin/gpg
 [rerere]
 	enabled = true
+[branch]
+	sort = -committerdate
