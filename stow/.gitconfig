@@ -2,9 +2,16 @@
 	excludesfile = /Users/alexander/.gitignore_global
 	autocrlf = false
 	editor = vim
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[delta]
+	navigate = true
+[merge]
+	conflictstyle = diff3
 [user]
 	name = Alexander Lazarov
 	email = alexander.lazaroff@gmail.com
@@ -14,6 +21,7 @@
 	autoSetupRemote = true
 [commit]
 	gpgsign = true
+	template = /Users/alexander.lazarov/.stCommitMsg
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -50,3 +58,6 @@
 	enabled = true
 [branch]
 	sort = -committerdate
+[maintenance]
+	repo = /Users/alexander.lazarov/work/dotfiles
+	repo = /Users/alexander.lazarov/work/dext/application
