@@ -153,6 +153,5 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # switch dark/light mode
 alias swt="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
-alias cat=bat
 alias ff="fzf --preview \"bat --color=always --style=numbers --line-range=:500 {}\""
 alias kspring="ps aux | grep spring | grep -v grep | awk '{print $2}' | xargs kill -9"
