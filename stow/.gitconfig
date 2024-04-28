@@ -21,7 +21,6 @@
 	autoSetupRemote = true
 [commit]
 	gpgsign = true
-	template = /Users/alexander.lazarov/.stCommitMsg
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
