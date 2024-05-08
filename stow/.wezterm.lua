@@ -13,4 +13,6 @@ config.keys = {
   { key = 'Backspace',  mods = 'CTRL', action = wezterm.action.SendKey { key = 'w', mods = 'CTRL' } },
 }
 
+config.hide_tab_bar_if_only_one_tab = true
+
 return config
