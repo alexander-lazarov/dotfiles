@@ -7,15 +7,20 @@ config.font_size = 14.0
 
 config.keys = {
   -- left arrow + option = move one word left
-  { key = "LeftArrow",  mods = "OPT",  action = act { SendString = "\x1bb" } },
+  { key = 'LeftArrow',  mods = 'OPT',  action = act { SendString = "\x1bb" } },
+
   -- right arrow + option = move one word right
-  { key = "RightArrow", mods = "OPT",  action = act { SendString = "\x1bf" } },
+  { key = 'RightArrow', mods = 'OPT',  action = act { SendString = "\x1bf" } },
+
   -- left arrow + backspace = delete one word
   { key = 'Backspace',  mods = 'CTRL', action = act.SendKey { key = 'w', mods = 'CTRL' } },
+
   -- cmd + left arrow = previous tab
-  { key = "LeftArrow",  mods = "CMD",  action = act { ActivateTabRelative = -1 } },
+  { key = 'LeftArrow',  mods = 'CMD',  action = act { ActivateTabRelative = -1 } },
+
   -- cmd + right arrow = next tab
-  { key = "RightArrow", mods = "CMD",  action = act { ActivateTabRelative = 1 } },
+  { key = 'RightArrow', mods = 'CMD',  action = act { ActivateTabRelative = 1 } },
+
   -- ctrl + k = clear terminal
   {
     key = 'k',
