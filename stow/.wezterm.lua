@@ -16,6 +16,15 @@ config.keys = {
   { key = "LeftArrow",  mods = "CMD",  action = act { ActivateTabRelative = -1 } },
   -- cmd + right arrow = next tab
   { key = "RightArrow", mods = "CMD",  action = act { ActivateTabRelative = 1 } },
+  -- ctrl + k = clear terminal
+  {
+    key = 'k',
+    mods = 'CTRL',
+    action = act.Multiple {
+      act.ClearScrollback 'ScrollbackAndViewport',
+      act.SendKey { key = 'K', mods = 'CTRL' }
+    }
+  }
 }
 
 config.hide_tab_bar_if_only_one_tab = true
