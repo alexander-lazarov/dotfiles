@@ -709,11 +709,8 @@ mason_lspconfig.setup_handlers {
   function(server_name)
     local cmd
 
-    if server_name == 'solargraph'
-    then
-      cmd = { os.getenv("HOME") .. '/.rbenv/shims/solargraph', 'stdio' }
-    -- elseif server_name == 'rubocop' then
-    --   cmd = { 'bundle exec', os.getenv('HOME') .. '/.rbenv/shims/rubocop', '--lsp' }
+    if server_name == 'rubocop' then
+      cmd = { 'bundle', 'exec', os.getenv('HOME') .. '/.rbenv/shims/rubocop', '--lsp' }
     else
       cmd = nil
     end
