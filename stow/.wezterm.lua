@@ -36,9 +36,9 @@ config.hide_tab_bar_if_only_one_tab = true
 
 local function scheme_for_appearance(appearance)
 	if appearance:find("Dark") then
-		return "Builtin Solarized Dark"
+		return "Tokyo Night"
 	else
-		return "Builtin Solarized Light"
+		return "Tokyo Night Day"
 	end
 end
 
