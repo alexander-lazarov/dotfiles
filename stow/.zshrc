@@ -78,7 +78,6 @@ plugins=(
   virtualenv
   volta
   autojump
-  # zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -165,4 +164,7 @@ alias rdmr='rails db:migrate:redo'
 alias rdms='rails db:migrate:status'
 alias ru='rails runner'
 alias hv="hivemind"
+
+# zsh autosuggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
