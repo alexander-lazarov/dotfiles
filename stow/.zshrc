@@ -71,7 +71,6 @@ export NVM_AUTO_USE=true
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  rails
   rbenv
   bundler
   macos
@@ -155,3 +154,15 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 alias swt="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
 alias ff="fzf --preview \"bat --color=always --style=numbers --line-range=:500 {}\""
 alias kspring="ps aux | grep spring | grep -v grep | awk '{print $2}' | xargs kill -9"
+
+
+# Rails aliases
+alias -g RET='RAILS_ENV=test'
+alias rc='rails console'
+alias rdm='rails db:migrate'
+alias rdmd='rails db:migrate:down'
+alias rdmr='rails db:migrate:redo'
+alias rdms='rails db:migrate:status'
+alias ru='rails runner'
+alias hv="hivemind"
+
