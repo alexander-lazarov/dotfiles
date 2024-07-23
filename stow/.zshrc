@@ -127,8 +127,6 @@ alias sub-dl="subliminal download -l en"
 
 export BUNDLER_EDITOR=/usr/local/bin/code
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias brow='arch --x86_64 /usr/local/Homebrew/bin/brew'
