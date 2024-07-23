@@ -77,7 +77,6 @@ plugins=(
   fzf
   virtualenv
   volta
-  autojump
 )
 
 source $ZSH/oh-my-zsh.sh
