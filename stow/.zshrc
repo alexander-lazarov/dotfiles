@@ -75,7 +75,6 @@ plugins=(
   bundler
   macos
   fzf
-  virtualenv
   volta
 )
 
