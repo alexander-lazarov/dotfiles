@@ -20,10 +20,6 @@ eval "$(rbenv init - zsh)"
 # scmpuff init
 eval "$(scmpuff init -s)"
 
-# Homebrew on Apple Silicon
-path=('/opt/homebrew/bin' $path)
-export PATH
-
 # Rails aliases
 alias -g RET='RAILS_ENV=test'
 alias rc='rails console'
@@ -33,6 +29,7 @@ alias rdmr='rails db:migrate:redo'
 alias rdms='rails db:migrate:status'
 alias ru='rails runner'
 alias hv="hivemind"
+alias be="bundle exec"
 
 # git aliases
 alias g='git'
