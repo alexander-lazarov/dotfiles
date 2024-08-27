@@ -60,5 +60,8 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 # zsh autosuggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 eval "$(starship init zsh)"
 
