@@ -2,6 +2,9 @@
 # has to e on the top of the file
 export TERM="xterm-256color"
 
+# Init autocomplte
+autoload -Uz compinit && compinit
+
 alias vim="nvim"
 
 export PATH="/usr/local/mysql/bin:$PATH"
