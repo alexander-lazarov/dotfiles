@@ -54,6 +54,9 @@ function _rake_command () {
   fi
 }
 
+alias rake='_rake_command'
+compdef _rake_command=rake
+
 # Rails aliases
 alias -g RET='RAILS_ENV=test'
 alias rc='rails console'
