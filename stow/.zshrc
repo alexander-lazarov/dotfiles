@@ -39,7 +39,6 @@ function _rails_command () {
 }
 
 alias rails='_rails_command'
-compdef _rails_command=rails
 
 # rake command wrapper
 function _rake_command () {
@@ -55,7 +54,6 @@ function _rake_command () {
 }
 
 alias rake='_rake_command'
-compdef _rake_command=rake
 
 # Rails aliases
 alias -g RET='RAILS_ENV=test'
