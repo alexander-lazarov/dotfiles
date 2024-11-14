@@ -36,9 +36,9 @@ config.hide_tab_bar_if_only_one_tab = true
 
 local function scheme_for_appearance(appearance)
 	if appearance:find("Dark") then
-		return "Tokyo Night"
+		return "Railscasts (dark) (terminal.sexy)"
 	else
-		return "Tokyo Night Day"
+		return "Railscasts (light) (terminal.sexy)"
 	end
 end
 
