@@ -4,3 +4,5 @@ theme = dark:catppuccin-frappe,light:catppuccin-latte
 # clear screen with ctrl+k
 keybind = ctrl+k=clear_screen
 
+# enable copy on select
+copy-on-select = true
