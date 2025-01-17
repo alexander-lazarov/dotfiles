@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/alexander.lazarov/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = false
 	editor = vim
 	pager = delta
