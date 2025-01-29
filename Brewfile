@@ -54,7 +54,7 @@ brew "pinentry-mac"
 brew "pkgconf"
 brew "poetry"
 brew "poppler"
-brew "postgresql@16", restart_service: true, link: true
+brew "postgresql@17", restart_service: true, link: true
 brew "pyenv"
 brew "qpdf"
 brew "rabbitmq"
