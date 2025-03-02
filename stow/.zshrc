@@ -5,6 +5,14 @@ export TERM="xterm-256color"
 # Init autocomplte
 autoload -Uz compinit && compinit
 
+# history setup
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+
+setopt HIST_SAVE_NO_DUPS
+setopt INC_APPEND_HISTORY
+
 alias vim="nvim"
 
 export PATH="/usr/local/mysql/bin:$PATH"
