@@ -19,7 +19,8 @@ export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="${HOME}/bin:$PATH"
 
-export BUNDLER_EDITOR=/usr/local/bin/code
+export BUNDLER_EDITOR=nvim
+export EDITOR=nvim
 
 alias swt="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
 
