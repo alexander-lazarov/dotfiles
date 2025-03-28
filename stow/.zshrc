@@ -9,9 +9,9 @@ autoload -Uz compinit && compinit
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
-
 setopt HIST_SAVE_NO_DUPS
 setopt INC_APPEND_HISTORY
+setopt HIST_REDUCE_BLANKS
 
 alias vim="nvim"
 
