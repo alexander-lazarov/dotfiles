@@ -1,8 +1,8 @@
 # New machine setup
 
 - Open terminal.app, install brew
-- Set touchbar scroll direction to not natural
-- Remap Esc to CapsLock
+- Remap Esc to CapsLock # TODO - add this to `mac_setup`
+- Run Mac setup - `./mac_setup.sh`
 - Set up ssh keys:
   `mkdir ~/.ssh && cp id_rsa id_rsa.pub ~/.ssh && chmod 06000 ~/.ssh/id_rsa*`
 - clone dotfiles
