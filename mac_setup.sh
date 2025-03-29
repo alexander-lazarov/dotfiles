@@ -10,6 +10,9 @@ defaults write com.apple.dock "show-recents" -bool "false"
 # set maginification on and magnification size to max
 defaults write com.apple.dock "magnification" -bool "true"
 defaults write com.apple.dock "largesize" -int 128
+
+# Set upper left hot corner to show all windows
+defaults write com.apple.dock wvous-tl-corner -int 2
 ## /Dock stuff
 
 ## Trackpad stuff
@@ -24,6 +27,6 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 # TODO: remap caps lock to Esc
 ## /Keyboard
 
-
 # Reload setttings
 /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
+killall Dock
