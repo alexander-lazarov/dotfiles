@@ -27,6 +27,16 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 # TODO: remap caps lock to Esc
 ## /Keyboard
 
+## Finder
+# show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# default to home folder
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+## /Finder
+
 # Reload setttings
 /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
 killall Dock
+killall Finder
