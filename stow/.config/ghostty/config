@@ -1,6 +1,9 @@
 # automatically switch the theme based on light/dark mode of the OS
 theme = dark:BlulocoDark,light:BlulocoLight
 
+# clear screen with ctrl+k
+keybind = ctrl+k=clear_screen
+
 # enable copy on select
 copy-on-select = true
 
