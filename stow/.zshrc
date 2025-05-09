@@ -5,6 +5,9 @@ export TERM="xterm-256color"
 # Init autocomplte
 autoload -Uz compinit && compinit
 
+# enable colours for ls
+alias ls='ls --color=auto'
+
 # history setup
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
