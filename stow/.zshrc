@@ -67,6 +67,21 @@ function _rake_command () {
 
 alias rake='_rake_command'
 
+# rspec command wrapper
+function _rspec_command() {
+  if [ -e "bin/stubs/rspec" ]; then
+    bin/stubs/rspec $@
+  elif [ -e "bin/rspec" ]; then
+    bin/rspec $@
+  elif type bundle &> /dev/null && [[ -e "Gemfile" || -e "gems.rb" ]]; then
+    bundle exec rspec $@
+  else
+    command rspec $@
+  fi
+}
+
+alias rspec='_rspec_command'
+
 # Rails aliases
 alias -g RET='RAILS_ENV=test'
 alias rc='rails console'
