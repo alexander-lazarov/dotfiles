@@ -20,7 +20,6 @@ alias vim="nvim"
 
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="${HOME}/bin:$PATH"
 
 export BUNDLER_EDITOR=nvim
 export EDITOR=nvim
@@ -132,3 +131,5 @@ source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 
 eval "$(starship init zsh)"
+
+export PATH="${HOME}/bin:$PATH"
