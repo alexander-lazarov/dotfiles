@@ -84,6 +84,7 @@ alias rspec='_rspec_command'
 # Rails aliases
 alias -g RET='RAILS_ENV=test'
 alias rc='rails console'
+alias rdb='rails db'
 alias rdm='rails db:migrate'
 alias rdmd='rails db:migrate:down'
 alias rdmr='rails db:migrate:redo'
