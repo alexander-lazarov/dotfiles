@@ -110,6 +110,9 @@ alias gba='git branch --all'
 alias gbd='git branch --delete'
 alias gbD='git branch --delete --force'
 
+# zoxide aliases
+alias j="z"
+alias jj="zi"
 
 # Volta init
 export VOLTA_HOME="$HOME/.volta"
