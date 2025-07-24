@@ -114,6 +114,10 @@ alias gbD='git branch --delete --force'
 alias j="z"
 alias jj="zi"
 
+# git-fixup aliases
+alias gf="git-fixup"
+alias gfc="git-fixup -c"
+
 # Volta init
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
@@ -137,3 +141,6 @@ eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
 export PATH="${HOME}/bin:$PATH"
+
+# git-fixup autocomplete
+zstyle ':completion:*:*:git:*' user-commands fixup:'Create a fixup commit'

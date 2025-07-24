@@ -60,3 +60,9 @@
 [maintenance]
 	repo = /Users/alexander.lazarov/work/dotfiles
 	repo = /Users/alexander.lazarov/work/dext/application
+[fixup]
+    menu = fzf --height '60%' \
+                --bind 'tab:toggle-preview' \
+                --preview 'git show --color {+1}' \
+                --preview-window=up:80% \
+                --prompt 'Select commit: '
