@@ -1,5 +1,5 @@
 # automatically switch the theme based on light/dark mode of the OS
-theme = dark:BlulocoDark,light:BlulocoLight
+theme = dark:Bluloco Dark,light:Bluloco Light
 
 # clear screen with ctrl+k
 keybind = ctrl+k=clear_screen
