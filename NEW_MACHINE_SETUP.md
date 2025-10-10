@@ -4,7 +4,7 @@
 - Remap Esc to CapsLock # TODO - add this to `mac_setup`
 - Run Mac setup - `./mac_setup.sh`
 - Set up ssh keys:
-  `mkdir ~/.ssh && cp id_rsa id_rsa.pub ~/.ssh && chmod 06000 ~/.ssh/id_rsa*`
+  `mkdir ~/.ssh && cp id_rsa id_rsa.pub ~/.ssh && chmod 0600 ~/.ssh/id_rsa*`
 - clone dotfiles
   `mkdir ~/work && cd ~/work && git clone git@github.com:alexander-lazarov/dotfiles.git`
 - install brew packages:
