@@ -109,6 +109,7 @@ alias gb='git branch'
 alias gba='git branch --all'
 alias gbd='git branch --delete'
 alias gbD='git branch --delete --force'
+alias gfp='git fetch --all --prune'
 
 # zoxide aliases
 alias j="z"
