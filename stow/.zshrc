@@ -20,6 +20,7 @@ alias vim="nvim"
 
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH/$HOME/.local/bin"
 
 export BUNDLER_EDITOR=nvim
 export EDITOR=nvim
