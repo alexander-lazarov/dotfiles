@@ -131,6 +131,9 @@ export GPG_TTY=$(tty)
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
+# Disable Homebrew environment hints
+export HOMEBREW_NO_ENV_HINTS=1
+
 # zsh autosuggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
