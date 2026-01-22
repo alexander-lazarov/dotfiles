@@ -61,7 +61,7 @@ brew "php"
 brew "pinentry-mac"
 brew "poetry"
 brew "postgis"
-brew "postgresql@17", restart_service: :changed, link: true
+brew "postgresql@18", restart_service: :changed, link: true
 brew "pyenv"
 brew "qpdf"
 brew "rabbitmq"
