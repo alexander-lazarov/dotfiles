@@ -122,6 +122,9 @@ alias jj="zi"
 alias gf="git-fixup"
 alias gfc="git-fixup -c"
 
+# yolode
+alias yolode="claude --dangerously-skip-permissions"
+
 # Volta init
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
