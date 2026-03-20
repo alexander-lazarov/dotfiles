@@ -113,6 +113,7 @@ alias gbd='git branch --delete'
 alias gbD='git branch --delete --force'
 alias gfp='git fetch --all --prune'
 alias grc='git rebase --continue'
+alias grh='git reset --hard @{u}'
 
 # zoxide aliases
 alias j="z"
