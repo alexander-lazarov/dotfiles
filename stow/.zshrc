@@ -124,7 +124,7 @@ alias gf="git-fixup"
 alias gfc="git-fixup -c"
 
 # yolode
-alias yolode="claude --dangerously-skip-permissions"
+alias yolode="claude --dangerously-skip-permissions; reset"
 
 # Volta init
 export VOLTA_HOME="$HOME/.volta"
