@@ -133,6 +133,9 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 # Rancher path
 export PATH="$HOME/.rd/bin:$PATH"
 
+# claude cli
+export PATH="$HOME/.local/bin:$PATH"
+
 export GPG_TTY=$(tty)
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
