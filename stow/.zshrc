@@ -124,8 +124,8 @@ alias jj="zi"
 alias gf="git-fixup"
 alias gfc="git-fixup -c"
 
-# yolode
-alias yolode="claude --dangerously-skip-permissions; reset"
+# claude
+alias claude="env CLAUDE_CODE_NO_FLICKER=1 claude" 
 
 # Volta init
 export VOLTA_HOME="$HOME/.volta"
