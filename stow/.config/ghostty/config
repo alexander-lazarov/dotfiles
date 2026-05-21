@@ -7,8 +7,5 @@ keybind = ctrl+k=clear_screen
 # enable copy on select
 copy-on-select = true
 
-# hack for better performance of macos animations
-background-opacity = 0.999
-
 # cursor shader
 custom-shader = shaders/cursor_blaze.glsl
