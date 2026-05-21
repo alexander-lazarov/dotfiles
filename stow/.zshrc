@@ -160,3 +160,9 @@ export PATH="${HOME}/bin:$PATH"
 
 # git-fixup autocomplete
 zstyle ':completion:*:*:git:*' user-commands fixup:'Create a fixup commit'
+
+# Auto-load `wt` whenever you cd into a repo that has bin/worktrees
+_wt_autoload() { [[ -x bin/worktrees ]] && eval "$(bin/worktrees zsh)"; }
+autoload -U add-zsh-hook
+add-zsh-hook chpwd _wt_autoload
+_wt_autoload
