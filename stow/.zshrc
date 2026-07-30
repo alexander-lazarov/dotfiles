@@ -125,7 +125,7 @@ alias gf="git-fixup"
 alias gfc="git-fixup -c"
 
 # claude
-alias claude="env CLAUDE_CODE_NO_FLICKER=1 claude" 
+alias claude="env CLAUDE_CODE_NO_FLICKER=1 claude"
 alias ccusage="npx ccusage@latest"
 
 # Volta init
