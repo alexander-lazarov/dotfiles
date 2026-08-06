@@ -148,8 +148,10 @@ export HOMEBREW_NO_ENV_HINTS=1
 # zsh autosuggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+# Set up fzf key bindings and fuzzy completion (only in a real terminal)
+if [[ -t 0 ]]; then
+  source <(fzf --zsh)
+fi
 
 # Set up zoxide
 eval "$(zoxide init zsh)"
