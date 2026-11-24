@@ -32,6 +32,7 @@ alias la='ls -A'
 
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 export PATH="$PATH:$HOME/.cargo/bin"
